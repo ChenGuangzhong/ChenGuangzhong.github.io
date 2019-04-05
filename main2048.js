@@ -137,7 +137,7 @@ function generateOneNumber(){
     return true;
 }
 
-$(document).keydown( function( event ){
+$(document).keydown( function( event ){  
     event.preventDefault();
     switch( event.keyCode ){
         case 37: //left
@@ -170,11 +170,13 @@ $(document).keydown( function( event ){
 });
 
 document.addEventListener('touchstart',function(event){
+    event.preventDefault();
     startx = event.touches[0].pageX;
     starty = event.touches[0].pageY;
 });
 
 document.addEventListener('touchend',function(event){
+    event.preventDefault();
     endx = event.changedTouches[0].pageX;
     endy = event.changedTouches[0].pageY;
 
