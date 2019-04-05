@@ -73,7 +73,7 @@ function init(){
 
     updateBoardView();
 
-    score = 0;
+    score = 962464;
     updateScore( score );
 }
 
