@@ -205,6 +205,7 @@ document.addEventListener('touchend',function(event){
     }
     else{
         if( deltay > 0 ){
+            event.preventDefault();
             //move down
             if( moveDown() ){
                 setTimeout("generateOneNumber()",210);
