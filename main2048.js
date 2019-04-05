@@ -37,7 +37,6 @@ function newgame(){
    // generateOneNumber();
    // generateOneNumber();
 }
-
 function init(){
     for( var i = 0 ; i < 4 ; i ++ )
         for( var j = 0 ; j < 4 ; j ++ ){
@@ -68,8 +67,8 @@ function init(){
     board[2][2]=1024;
     board[2][3]=2048;
     board[3][0]=4096;
-    board[3][1]=9192;
-    board[3][2]=18384;
+    board[3][1]=8192;
+    board[3][2]=16384;
     board[3][3]=0;
 
     updateBoardView();
