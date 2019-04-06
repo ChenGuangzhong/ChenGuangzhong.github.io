@@ -34,8 +34,8 @@ function newgame(){
     //初始化棋盘格
     init();
     //在随机两个格子生成数字
-   // generateOneNumber();
-   // generateOneNumber();
+    generateOneNumber();
+    generateOneNumber();
 }
 function init(){
     for( var i = 0 ; i < 4 ; i ++ )
@@ -50,30 +50,14 @@ function init(){
         board[i] = new Array();
         hasConflicted[i] = new Array();
         for( var j = 0 ; j < 4 ; j ++ ){
-            //board[i][j] = 0;
+            board[i][j] = 0;
             hasConflicted[i][j] = false;
         }
     }
-    board[0][0]=2;
-    board[0][1]=4;
-    board[0][2]=8;
-    board[0][3]=16;
-    board[1][0]=32;
-    board[1][1]=64;
-    board[1][2]=128;
-    board[1][3]=0;
-    board[2][0]=256;
-    board[2][1]=512;
-    board[2][2]=1024;
-    board[2][3]=2048;
-    board[3][0]=4096;
-    board[3][1]=8192;
-    board[3][2]=16384;
-    board[3][3]=0;
 
     updateBoardView();
 
-    score = 962464;
+    score = 0;
     updateScore( score );
 }
 
