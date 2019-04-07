@@ -126,9 +126,9 @@ function addBalls( x , y , num ){
                 var aBall = {
                     x:x+j*2*(RADIUS+1)+(RADIUS+1),
                     y:y+i*2*(RADIUS+1)+(RADIUS+1),
-                    g:1.5+Math.random(),
-                    vx:Math.pow( -1 , Math.ceil( Math.random()*1000 ) ) * 4,
-                    vy:-5,
+                    g:0.3+Math.random(),
+                    vx:Math.pow( -1 , Math.ceil( Math.random()*1000 ) ) * 2,
+                    vy:-2.5,
                     color: colors[ Math.floor( Math.random()*colors.length ) ]
                 }
 
