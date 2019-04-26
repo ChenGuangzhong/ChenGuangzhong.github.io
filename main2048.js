@@ -1,7 +1,7 @@
 var board = new Array();
 var score = 0;
 var hasConflicted = new Array();  //用于标记某个格子是否发生过碰撞
-var love=new Array(' ','山','有','木','兮','卿','有','意','昨','夜','星','辰','恰','似','你');
+var love=new Array(' ','2','4','8','16','32','64','128','256','512','1024','2048','4096',' ',' ');
 
 var startx = 0;
 var starty = 0;
